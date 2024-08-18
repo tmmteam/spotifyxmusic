@@ -17,7 +17,7 @@ start_txt = """**
  ⦿ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴅᴍ ᴍᴇ !
 **"""
 
-@bot.on_message(filters.command(["repo"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]))
+@bot.on_message(filters.command(["rrepo"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]))
 async def start(_, msg):
     buttons = [
         [ 
@@ -69,7 +69,7 @@ async def start(_, msg):
 #-------------------------------------------------------#
 
 
-@bot.on_message(filters.command("repo", prefixes="@"))
+@bot.on_message(filters.command("rrepo", prefixes="@"))
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
@@ -90,4 +90,3 @@ async def repo(_, message):
         await bot.send_message(message.chat.id, text=text, disable_web_page_preview=True)
     else:
         await bot.send_message(message.chat.id, text="Failed to fetch contributors.")
-
