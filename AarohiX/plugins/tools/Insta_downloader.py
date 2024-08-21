@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 # Function to download Instagram video using SaveIG
 async def download_instagram_video(link):
-    response = requests.post("https://saveig.app/api/ajaxSearch", data={"q": link, "t": "media", "lang": "en"})
+    response = requests.post("https://karma-api2.vercel.app/instadl", data={"q": link, "t": "media", "lang": "en"})
     if response.ok:
         data = response.json()
         html_content = data.get("data")
