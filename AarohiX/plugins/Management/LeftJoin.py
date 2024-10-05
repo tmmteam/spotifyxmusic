@@ -44,7 +44,7 @@ async def member_has_joined(client: bot, member: ChatMemberUpdated):
         
         await client.send_photo(
             chat_id=member.chat.id,
-            photo="https://graph.org/file/6f913de8bd1fc44d2d7f2.jpg",
+            photo="https://envs.sh/BA8.mp4",
             caption=caption,
             reply_markup=user_button,
         )
