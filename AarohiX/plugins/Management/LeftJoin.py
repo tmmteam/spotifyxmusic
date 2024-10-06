@@ -22,48 +22,7 @@ async def member_has_joined(client: bot, member: ChatMemberUpdated):
     except ChatAdminRequired:
         return
 
-    try:
-        username = user.username
-        url = f"https://t.me/{username}" if username else f"tg://openmessage?user_id={user.id}"
-
-        user_button = InlineKeyboardMarkup([
-            [
-                InlineKeyboardButton(
-                    f"⦿ ᴄʟɪᴄᴋ ᴍᴇ ⦿",
-                    url=url
-                )
-            ]
-        ])
-
-        caption = (
-            f"🎉 ᴡᴇʟᴄᴏᴍᴇ {user.mention}! 🌟\n\n"
-            f"✨ ɪᴛ's ᴀ ᴘʟᴇᴀsᴜʀᴇ ᴛᴏ ʜᴀᴠᴇ ʏᴏᴜ ᴡɪᴛʜ ᴜs! "
-            f"ғᴇᴇʟ ғʀᴇᴇ ᴛᴏ sʜᴀʀᴇ ᴜʀ ᴛʜᴏᴜɢʜᴛs ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ᴄᴏᴍᴍᴜɴɪᴛʏ ᴠɪʙᴇs.\n\n"
-            f"📅 ᴊᴏɪɴ ᴅᴀᴛᴇ : {get_formatted_datetime()}"
-        )
-        
-        await client.send_photo(
-            chat_id=member.chat.id,
-            photo="https://envs.sh/BA8.mp4",
-            caption=caption,
-            reply_markup=user_button,
-        )
-    except RPCError as e:
-        print(e)
-        return
-
-@bot.on_chat_member_updated(filters.group, group=20)
-async def member_has_left(client: bot, member: ChatMemberUpdated):
-    if (
-        not member.new_chat_member
-        and member.old_chat_member.status not in {"banned", "restricted"}
-        and member.old_chat_member
-    ):
-        pass
-    else:
-        return
-
-    user = member.old_chat_member.user if member.old_chat_member else member.from_user
+    
     try:
         username = user.username
         url = f"https://t.me/{username}" if username else f"tg://openmessage?user_id={user.id}"
