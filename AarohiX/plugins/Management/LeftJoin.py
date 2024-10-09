@@ -15,7 +15,7 @@ async def member_has_joined(client: bot, member: ChatMemberUpdated):
     else:
         return
 
-    user = member.new_chat_member.user if member.new_chat_member else member.from_user
+ 
     try:
         if user.is_bot:
             return
