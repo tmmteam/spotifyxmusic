@@ -32,6 +32,7 @@ RADIO_STATION = {
     "Mirchi": "http://peridot.streamguys.com:7150/Mirchi",
     "Bollywood Love": "https://nl4.mystreaming.net/uber/bollywoodlove/icecast.audio",
     "Radio Today": "http://stream.zenolive.com/8wv4d8g4344tv",
+    "Bollywood": "https://stream-159.zeno.fm/143d7gty24zuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIxNDNkN2d0eTI0enV2IiwiaG9zdCI6InN0cmVhbS0xNTkuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6ImgybmNNdkhiVGZpYkE2MGQ4U3MxVGciLCJpYXQiOjE3MjgwMTkwOTEsImV4cCI6MTcyODAxOTE1MX0.0gd1Nx6ke2cXJR1pJxxFsVTKHmtQ3OZnkRh_fKFoRUA",
     "YouTube": "https://www.youtube.com/live/eu191hR_LEc?si=T-9QYD548jd0Mogp",
     "Zee News": "https://www.youtube.com/live/TPcmrPrygDc?si=hiHBkIidgurQAd1P",
     "Aaj Tak": "https://www.youtube.com/live/Nq2wYlWFucg?si=usY4UYiSBInKA0S1",
