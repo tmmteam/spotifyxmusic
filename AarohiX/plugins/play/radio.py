@@ -30,6 +30,7 @@ RADIO_STATION = {
     "Capital FM": "http://media-ice.musicradio.com/CapitalMP3?.mp3&listening-from-radio-garden=1616312105154",
     "English": "https://hls-01-regions.emgsound.ru/11_msk/playlist.m3u8",
     "Mirchi": "http://peridot.streamguys.com:7150/Mirchi",
+    "Bollywood Love": "https://nl4.mystreaming.net/uber/bollywoodlove/icecast.audio",
     "Radio Today": "http://stream.zenolive.com/8wv4d8g4344tv",
     "YouTube": "https://www.youtube.com/live/eu191hR_LEc?si=T-9QYD548jd0Mogp",
     "Zee News": "https://www.youtube.com/live/TPcmrPrygDc?si=hiHBkIidgurQAd1P",
