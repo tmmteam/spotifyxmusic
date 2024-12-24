@@ -19,7 +19,7 @@ async def mongo_command(client, message: Message):
             # Attempt to connect to the MongoDB instance
             client = MongoClient(mongo_url, serverSelectionTimeoutMS=5000)
             client.server_info()  # Will cause an exception if connection fails
-            await message.reply("𝗠𝗼𝗻𝗴𝗼𝗗𝗕 𝗶𝘀 𝗹𝗶𝘃𝗲 𝗮𝗻𝗱 𝗿𝗲𝗮𝗱𝘆 𝘁𝗼 𝗴𝗼! 🚀"")
+            await message.reply("𝗠𝗼𝗻𝗴𝗼𝗗𝗕 𝗶𝘀 𝗹𝗶𝘃𝗲 𝗮𝗻𝗱 𝗿𝗲𝗮𝗱𝘆 𝘁𝗼 𝗴𝗼! 🚀")
         except Exception as e:
             await message.reply(f"Failed to connect to MongoDB: {e}")
     else:
