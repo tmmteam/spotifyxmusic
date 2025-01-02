@@ -37,7 +37,7 @@ spotipy
 telegraph
 tgcrypto
 unidecode
-yt-dlp==2024.12.13
+yt-dlp==2024.12.23.232812.dev0
 git+https://github.com/yt-dlp/yt-dlp
 youtube-search
 youtube-search-python
