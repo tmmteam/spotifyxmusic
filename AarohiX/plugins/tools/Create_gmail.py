@@ -8,7 +8,7 @@ CREATE_API_URL = "https://last-warning.serv00.net/Create_Gmail.php"
 INBOX_API_URL = "https://last-warning.serv00.net/Inbox.php?raj={email}"
 
 # Command: /start
-@app.on_message(filters.command("start"))
+@app.on_message(filters.command("starts"))
 async def start_command(_, message):
     await message.reply(
         "Welcome to Last Warning Temp Mail 💌 Bot!\n\n"
@@ -20,7 +20,7 @@ async def start_command(_, message):
     )
 
 # Command: /help
-@app.on_message(filters.command("help"))
+@app.on_message(filters.command("helps"))
 async def help_command(_, message):
     await message.reply(
         "**Help Menu:**\n\n"
