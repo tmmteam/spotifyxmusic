@@ -26,7 +26,7 @@ async def send_welcome(client, message):
     # Send welcome message with ad image and buttons
     await message.reply_photo(
         ad_image_url, 
-        caption="Welcome to the Last Warning Bot!", 
+        caption="Welcome to the Last Warning Email Bot!", 
         reply_markup=keyboard
     )
 
