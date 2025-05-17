@@ -13,8 +13,7 @@ gtts
 gpytranslate
 hachoir
 heroku3
-httpx[http2]
-httpx==0.25.2
+httpx[http2]==0.25.2
 lyricsgenius
 motor
 numpy
